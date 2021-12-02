@@ -8,17 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navparent">
-                <h1>FINDMOVIES</h1>
-                <div class="btns">
-                    <a href="" class="item">TRENDING</a>
-                    <a href="" class="item">GENRE</a>
-                    <a href="" class="item">LATEST</a>
-                </div>    
-            </div>
-        </nav>
+    <nav class="fix">
+        <div class="navparent">
+            <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
+            <div class="btns">
+                <a onclick="to('trending')" class="item">TRENDING</a>
+                <a href="" class="item">GENRE</a>
+                <a href="" class="item">LATEST</a>
+            </div>    
+        </div>
+    </nav>
+    <nav class="stick">
+        <div class="navparent">
+            <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
+            <div class="btns">
+                <a onclick="to('trending')" class="item">TRENDING</a>
+                <a href="" class="item">GENRE</a>
+                <a href="" class="item">LATEST</a>
+            </div>    
+        </div>
+    </nav>
+    
+    <header id="top">
+        
         <div class="banner featured">
             <img class="background" src="img/featured/poster3.webp">
             <div class="abbottom">
@@ -33,5 +45,31 @@
             
         </div>
     </header>
+    <section class="trending movielist" id="trending">
+        <div class="limit-block">
+            <h1 class="sectiontitle"><img src="img/canada-flag.jpeg">Trending in Canada</h1>
+            <div class="conslider">
+                <div class="go next">
+
+                </div>
+                <div class="go prev">
+                    
+                </div>
+                <div class="moviecon">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>
