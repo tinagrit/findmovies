@@ -13,3 +13,37 @@ window.onscroll = function() {
         document.querySelector("nav.fix").style.top = "-80px";
       }
 };
+var a;
+function conme(e) {
+	a=e;
+	
+	let prev = e.parentNode.querySelector('.prev')
+	let next = e.parentNode.querySelector('.next')
+	
+	e.scrollLeft = 0 
+	prev.style.display = 'none';
+	
+	e.addEventListener('scroll', ()=> {
+		if (e.scrollLeft == 0) {prev.style.display = 'none';}
+		else {
+		prev.style.display = 'flex'
+		}
+		
+		if (e.scrollLeft > e.scrollWidth - e.clientWidth - 10) {
+			next.style.display = 'none';
+		} else {
+		next.style.display = 'flex'
+		}
+	})
+	
+	prev.addEventListener('click',()=> {
+			e.scrollLeft -=100
+	})
+	next.addEventListener('click',() => {
+
+			e.scrollLeft += 100;
+
+	})
+}
+
+conme(document.getElementById('trendingcon'))
