@@ -37,11 +37,11 @@ function conme(e) {
 	})
 	
 	prev.addEventListener('click',()=> {
-			e.scrollLeft -=100
+			e.scrollLeft -=170
 	})
 	next.addEventListener('click',() => {
 
-			e.scrollLeft += 100;
+			e.scrollLeft += 170;
 
 	})
 }

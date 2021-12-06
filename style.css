@@ -20,6 +20,8 @@ body,* {
 
 /* width */
 ::-webkit-scrollbar {
+
+ display: none;
   width: 8px;
   height: 8px;
   z-index: 99;
@@ -110,9 +112,12 @@ nav h1 {
     transition: opacity 0.5s;
 }
 
-nav h1:hover {
-    opacity: 1;
+@media (min-width: 650px) {
+	nav h1:hover {
+    	opacity: 1;
+	}
 }
+
 
 nav .btns {
     display: inline;
@@ -132,9 +137,12 @@ nav .btns a {
     opacity: 0.6;
 }
 
-nav .btns a.item:hover {
-    opacity: 1;
+@media (min-width: 650px) {
+	nav .btns a.item:hover {
+		opacity: 1;
+	}	
 }
+
 
 nav.fix {
     background-color: #161616;
@@ -214,9 +222,11 @@ header .banner.featured .title {
         width: 90%;
     }
 }
+@media (min-width: 650px) {
+	header .banner.featured .title:hover {
+		transform: scale(1.1);
+	}
 
-header .banner.featured .title:hover {
-    transform: scale(1.1);
 }
 
 header .banner.featured .watch button {
@@ -229,14 +239,18 @@ header .banner.featured .watch button {
     transition: background-color 0.5s, transform 0.5s;
 }
 
-header .banner.featured .watch button:hover {
-    transform: scale(1.15);
-    background-color: rgba(255,255,255,1);
+@media (min-width: 650px) {
+	header .banner.featured .watch button:hover {
+    	transform: scale(1.15);
+    	background-color: rgba(255,255,255,1);
+	}
 }
 
-header .banner.featured .watch button img {
-    width: 100%;
-}
+
+	header .banner.featured .watch button img {
+    	width: 100%;
+	}
+
 
 header .banner.featured .split {
     margin-top: 30px;
@@ -256,9 +270,12 @@ header .banner.featured .moreinfo {
     transition: transform 0.5s;
 }
 
-header .banner.featured .moreinfo:hover {
-    transform: scale(1.15);
+@media (min-width: 650px) {
+	header .banner.featured .moreinfo:hover {
+    	transform: scale(1.15);
+	}
 }
+
 
 header .banner.featured .moreinfo span {
     font-size: 20px;
@@ -298,10 +315,9 @@ header:after {
 
 
 section.trending {
-    height: 1800px;
     background-color: black;
     color: white;
-    padding: 100px 0 0 0;
+    padding: 100px 0 30px 0;
 }
 
 .movielist .sectiontitle img {
@@ -352,15 +368,17 @@ section.trending {
 	opacity: 0;
 	transition: opacity 0.5s;
 }
+@media (min-width: 650px) {
+	.movielist .moviecon .item:hover {
+		width: 300px;
+		cursor: pointer;
+	}
 
-.movielist .moviecon .item:hover {
-	width: 300px;
-	cursor: pointer;
+	.movielist .moviecon .item:hover:after {
+		opacity: 0.7;
+	}
 }
 
-.movielist .moviecon .item:hover:after {
-	opacity: 0.7;
-}
 
 .movielist .moviecon .item img {
 	position: absolute;
@@ -378,6 +396,10 @@ section.trending {
 	margin-left: 7px;
 }
 
+.movielist .moviecon .item:last-child {
+	margin-right: 120px;
+}
+
 .movielist .moviecon .item h1 {
 	position: absolute;
 	white-space: normal;
@@ -390,10 +412,12 @@ section.trending {
 	transition: opacity 0.5s;
 	z-index: 2;
 }
-
-.movielist .moviecon .item:hover h1 {
-	opacity: 1;
+@media (min-width: 650px) {
+	.movielist .moviecon .item:hover h1 {
+		opacity: 1;
+	}
 }
+
 
 @media (max-width: 650px) {
     .movielist .moviecon .item {
@@ -408,7 +432,7 @@ section.trending {
     height: 100%;
     width: 10%;
 	max-width: 60px;
-    z-index: 2;
+    z-index: 5;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -432,3 +456,58 @@ section.trending {
 		background-color: rgba(0,0,0,0.7);
 }
 
+
+
+
+section.genre {
+	color: white;
+	background-color: black;
+	padding: 40px 0;
+}
+
+section.genre .genrepicker .item {
+	background-color: white;
+	color: black;
+	width: 100%;
+	padding: 40px 15px;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+section.genre .genrelanding {
+	text-align: center;
+}
+
+section.genre .genrelanding .leftcol h1 {
+	text-align: left;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1250px) {
+	section.genre .genrelanding .leftcol h2 {
+		font-size: 1.2rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+section.genre .genrelanding .leftcol .split .item {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	padding: 10px 15px;
+}
+
+section.genre .genrelanding .leftcol .split .col-6 {
+	padding: calc(1.5rem * 0.25) calc(1.5rem * 0.25)
+}
+
+@media (max-width: 650px) {
+	.hidemeonsmall {
+		display: none;
+	}
+}

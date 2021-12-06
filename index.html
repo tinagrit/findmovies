@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>findmovies</title>
+	<link rel="stylesheet" href="splitme.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
             <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
-                <a href="" class="item">GENRE</a>
+                <a onclick="to('genre')" class="item">GENRE</a>
                 <a href="" class="item">LATEST</a>
             </div>    
         </div>
@@ -23,7 +24,7 @@
             <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
-                <a href="" class="item">GENRE</a>
+                <a onclick="to('genre')" class="item">GENRE</a>
                 <a href="" class="item">LATEST</a>
             </div>    
         </div>
@@ -102,6 +103,126 @@
 
         </div>
     </section>
+	<section class="genre" id="genre">
+<!--
+		<div class="limit-block">
+			<div class="split genrepicker">
+				<div class=" col-7 col-sm-6">
+					<div class="item"><h1>ADVENTURE</h1></div>
+				</div>
+				<div class=" col-3 col-sm-6">
+					<div class="item"><h1>THAI</h1></div>
+				</div>
+				<div class=" col-2 col-sm-6">
+					<div class="item"><h1>HORROR</h1></div>
+				</div>
+				<div class=" col-4 col-sm-6">
+					<div class="item"><h1>COMEDY</h1></div>
+				</div>
+				<div class=" col-4 col-sm-6">
+					<div class="item"><h1>ACTION</h1></div>
+				</div>
+				<div class=" col-4 col-sm-6">
+					<div class="item"><h1>DRAMA</h1></div>
+				</div>
+				<div class=" col-4 col-sm-6">
+					<div class="item"><h1>OTHER</h1></div>
+				</div>
+			</div>
+		</div>
+-->
+		<div class="genrelanding">
+			<div class="limit-block">
+				<div class="split">
+					<div class="col-sm-12 col-4 col-l1-5  leftcol">
+						<h1>What's your favorite genre?</h1>
+						<div class="split">
+							<div class="col-6">
+								<div class="item">
+								<h2>ADVENTURE</h2></div>
+							</div>
+							<div class="col-6">
+								<div class="item"><h2>ACTION
+									</h2></div>
+							</div>
+							<div class="col-6">
+								<div class="item">
+								<h2>DRAMA</h2></div>
+							</div>
+							<div class="col-6">
+								<div class="item">
+								<h2>COMEDY</h2></div>
+							</div>
+							<div class="col-6">
+								<div class="item">
+								<h2>THAI</h2></div>
+							</div>
+							<div class="col-6">
+								<div class="item">
+								<h2>HORROR</h2></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-8 col-l1-7 rightcol">
+						<div class="movielist">
+						<div class="conslider">
+                <div class="go next">
+					<img src="img/chevron-right.svg" class="donttouchme">
+                </div>
+                <div class="go prev">
+					<img src="img/chevron-left.svg" class="donttouchme">
+                    
+                </div>
+                <div class="moviecon" id="genrecon">
+                    <div class="item">
+						<img src="img/posters/1_diary-of-a-wimpy-kid.jpeg" alt="">
+						<h1>Diary of a Wimpy Kid</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/2_hawkeye.jpeg" alt="">
+						<h1>Hawkeye</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/3_squid-game.jpg" alt="">
+						<h1>Squid Game</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/4_demon-slayer.jpg" alt="">
+						<h1>Demon Slayer: Kimetsu No Yaiba</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/5_eternals.jpg" alt="">
+						<h1>Eternals</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/6_clifford.jpeg" alt="">
+						<h1>Clifford The Big Red Dog</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/7_beatles.jpeg" alt="">
+						<h1>The Beatles Get Back</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/8_the-power-of-the-dog.jpg" alt="">
+						<h1>The Power of the Dog</h1>
+					</div>
+                    <div class="item">
+						<img src="img/posters/9_venom-let-there-be-carnage.jpeg" alt="">
+						<h1>Venom: Let There Be Carnage</h1>
+					</div>
+					<div class="item">
+						<img src="img/posters/10_yellowstone.jpeg" alt="">
+						<h1>Yellowstone</h1>
+					</div>
+                </div>
+            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
     <script src="app.js"></script>
 </body>
 </html>
