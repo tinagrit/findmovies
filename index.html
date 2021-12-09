@@ -19,7 +19,7 @@
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
                 <a onclick="to('genre')" class="item">GENRE</a>
-                <a href="" class="item">LATEST</a>
+                <a onclick="to('random')" class="item">RANDOM</a>
             </div>
         </div>
     </nav>
@@ -31,7 +31,7 @@
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
                 <a onclick="to('genre')" class="item">GENRE</a>
-                <a href="" class="item">LATEST</a>
+                <a onclick="to('random')" class="item">RANDOM</a>
             </div>
         </div>
     </nav>
@@ -129,6 +129,47 @@
 
         </div>
     </section>
+	<section class="random movielist" id="random">
+		<div class="limit-block">
+			<h1 class="sectiontitle"><img src="img/thumb_up.svg" style="margin: 0 15px">You May Like<button class="random" onclick="spinrandomcon()">RANDOM</button></h1>
+			
+			<div class="conslider">
+                <div class="go next">
+                    <img src="img/chevron-right.svg" class="donttouchme">
+                </div>
+                <div class="go prev">
+                    <img src="img/chevron-left.svg" class="donttouchme">
+
+                </div>
+                <div class="moviecon" id="randomcon"></div>
+            </div>
+		</div>
+		
+	</section>
+	<section class="footer">
+		<div class="limit-block">
+			<div class="split">
+				<div class="col-ns-6">
+					<h1>FINDMOVIES</h1>
+					<p>A Service to let you find new movies</p>
+				</div>
+				<div class="col-ns-6" style="position: relative;">
+					<div class="socials">
+						<div class="block">
+							<img src="img/facebook.svg" alt="">
+						</div>
+						<div class="block">
+							<img src="img/instagram.svg" alt="">
+						</div>
+						<div class="block">
+							<img src="img/twitter.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
     <script src="app.js"></script>
 </body>
 

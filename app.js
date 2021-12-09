@@ -216,8 +216,7 @@ function conme(e) {
 	})
 }
 
-conme(document.getElementById('trendingcon'))
-conme(document.getElementById('genrecon'))
+
 
 function assign(e,m) {
 	e.querySelector('h1').innerHTML = movies[m].title;
@@ -241,8 +240,31 @@ function createcon(parent,array) {
 	}
 }
 
+function getRandomMovies(x) {
+	let randommov = [];
+	for (let i = 0; i<x; i++) {
+		do {
+			now = Math.floor(Math.random()*56);
+		} while (movies[now].title == undefined || randommov.indexOf(now) > -1);
+		
+		randommov.push(now);
+	}
+	return randommov;
+}
+
+conme(document.getElementById('trendingcon'))
+conme(document.getElementById('genrecon'))
+conme(document.getElementById('randomcon'))
+
 createcon(document.getElementById('trendingcon'),featured);
 createcon(document.getElementById('genrecon'),adventure)
+createcon(document.getElementById('randomcon'),getRandomMovies(10))
+
+function spinrandomcon() {
+	document.getElementById('randomcon').innerHTML = '';
+	document.getElementById('randomcon').scrollLeft= 0;
+	createcon(document.getElementById('randomcon'),getRandomMovies(10))
+}
 
 function switchGenre(genre) {
 

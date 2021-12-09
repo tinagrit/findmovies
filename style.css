@@ -345,7 +345,7 @@ section.trending {
     display: inline-block;
     height: 300px;
     width: 200px;
-    background-color: white;
+    background-color: black;
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
@@ -437,6 +437,17 @@ section.trending {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+}
+
+@media (min-width: 650px) {
+	.movielist .conslider .go{
+		visibility: hidden;
+	}
+}
+
+.movielist .conslider:hover .go {
+	visibility: visible;
 }
 
 .movielist .conslider .go img {
@@ -509,5 +520,112 @@ section.genre .genrelanding .leftcol .split .col-6 {
 @media (max-width: 650px) {
 	.hidemeonsmall {
 		display: none;
+	}
+}
+
+
+section.random {
+    background-color: black;
+    color: white;
+    padding: 20px 0 100px 0;
+}
+
+section.random h1.sectiontitle {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+section.random .random {
+	float:right;
+	z-index: 10;
+	background-color: white;
+	border: none;
+	font-size: 17px;
+	padding: 5px 15px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+@media (min-width: 650px) {
+	section.random .random:hover {
+		background-color: #A8A7A7;
+	}
+}
+
+
+
+section.footer {
+	padding: 30px 0 50px 0;
+	background-color: #1A1A1A;
+	color: white;
+}
+
+section.footer h1,
+section.footer p{
+	padding: 5px 0;
+}
+
+section.footer h1 {
+	font-size: 28px;
+}
+
+section.footer p {
+	font-size: 20px;
+	
+}
+section.footer .split .col-ns-6 {
+	padding-bottom: 0;
+}
+section.footer .socials {
+	display: flex;
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%)
+}
+section.footer .socials .block {
+	background-color: rgba(0,0,0,0.3);
+	width: 50px;height: 50px;
+	padding: 10px;
+	border: none;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	transition: background-color 0.5s, opacity 0.2s;
+}
+
+@media (min-width: 650px) {
+	section.footer .socials:hover .block {
+		opacity: 0.3;
+	}
+	section.footer .socials .block:hover {
+		opacity: 1;
+		background-color: rgba(0,0,0,1);
+	}
+
+}
+section.footer .socials .block img {
+	position: absolute;
+	filter: invert(100%);
+	width: 30px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%)
+}
+
+@media (max-width: 650px) {
+	section.footer h1,
+	section.footer p {
+		text-align: center
+	}
+	section.footer p {
+		margin-bottom: 30px;
+	}
+	section.footer .socials {
+		right: 50%;
+		transform: translate(50%,-50%);
 	}
 }
