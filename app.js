@@ -164,7 +164,7 @@ let featured = 		[0	,1	,2	,3	,4	,5	,6	,7	,8	,9	];
 let adventure = 	[10	,11	,12	,13	,14	,15	,8	,16	,17	,4	];
 let action = 		[18	,14	,8	,19	,15	,20	,24				];
 let drama = 		[25	,27	,28	,29	,30	,31	,32	,33			];
-let comedy = 		[18	,19	,33	,35	,36	,37	,38	,39	,40	,41	];
+let comedy = 		[19	,33	,18	,35	,36	,37	,38	,39	,40	,41	];
 let horror = 		[42	,43	,44	,45	,46	,47					];
 let thai = 			[48	,49	,50	,51	,52	,53	,54	,55			];
 
@@ -244,3 +244,9 @@ function createcon(parent,array) {
 createcon(document.getElementById('trendingcon'),featured);
 createcon(document.getElementById('genrecon'),adventure)
 
+function switchGenre(genre) {
+
+	document.getElementById('genrecon').innerHTML = '';
+	document.getElementById('genrecon').scrollLeft= 0;
+	createcon(document.getElementById('genrecon'),genre)
+}

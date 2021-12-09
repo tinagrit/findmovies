@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>findmovies</title>
-	<link rel="stylesheet" href="splitme.css">
+    <link rel="stylesheet" href="splitme.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="fix">
         <div class="navparent">
-            <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
+            <a onclick="to('top')">
+                <h1>FINDMOVIES</h1>
+            </a>
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
                 <a onclick="to('genre')" class="item">GENRE</a>
                 <a href="" class="item">LATEST</a>
-            </div>    
+            </div>
         </div>
     </nav>
     <nav class="stick">
         <div class="navparent">
-            <a onclick="to('top')"><h1>FINDMOVIES</h1></a>
+            <a onclick="to('top')">
+                <h1>FINDMOVIES</h1>
+            </a>
             <div class="btns">
                 <a onclick="to('trending')" class="item">TRENDING</a>
                 <a onclick="to('genre')" class="item">GENRE</a>
                 <a href="" class="item">LATEST</a>
-            </div>    
+            </div>
         </div>
     </nav>
-    
+
     <header id="top">
-        
+
         <div class="banner featured">
             <img class="background" src="img/featured/poster3.webp">
             <div class="abbottom">
                 <div class="center">
                     <img class="title" src="img/featured/title.png">
                     <div class="watch">
-                        <button onclick="link(`https://www.disneyplus.com/movies/diary-of-a-wimpy-kid/3W4BZbeErSgN`)"><img src="img/disneyplus.svg"></button>
+                        <button
+                            onclick="link(`https://www.disneyplus.com/movies/diary-of-a-wimpy-kid/3W4BZbeErSgN`)"><img
+                                src="img/disneyplus.svg"></button>
                     </div>
                     <h2 class="moreinfo"><img src="img/info.svg"> <span>More Info</span></h2>
                 </div>
             </div>
-            
+
         </div>
     </header>
     <section class="trending movielist" id="trending">
@@ -51,96 +59,77 @@
             <h1 class="sectiontitle"><img src="img/canada-flag.jpeg">Trending in Canada</h1>
             <div class="conslider">
                 <div class="go next">
-					<img src="img/chevron-right.svg" class="donttouchme">
+                    <img src="img/chevron-right.svg" class="donttouchme">
                 </div>
                 <div class="go prev">
-					<img src="img/chevron-left.svg" class="donttouchme">
-                    
+                    <img src="img/chevron-left.svg" class="donttouchme">
+
                 </div>
                 <div class="moviecon" id="trendingcon"></div>
             </div>
 
         </div>
     </section>
-	<section class="genre" id="genre">
-<!--
-		<div class="limit-block">
-			<div class="split genrepicker">
-				<div class=" col-7 col-sm-6">
-					<div class="item"><h1>ADVENTURE</h1></div>
-				</div>
-				<div class=" col-3 col-sm-6">
-					<div class="item"><h1>THAI</h1></div>
-				</div>
-				<div class=" col-2 col-sm-6">
-					<div class="item"><h1>HORROR</h1></div>
-				</div>
-				<div class=" col-4 col-sm-6">
-					<div class="item"><h1>COMEDY</h1></div>
-				</div>
-				<div class=" col-4 col-sm-6">
-					<div class="item"><h1>ACTION</h1></div>
-				</div>
-				<div class=" col-4 col-sm-6">
-					<div class="item"><h1>DRAMA</h1></div>
-				</div>
-				<div class=" col-4 col-sm-6">
-					<div class="item"><h1>OTHER</h1></div>
-				</div>
-			</div>
-		</div>
--->
-		<div class="genrelanding">
-			<div class="limit-block">
-				<div class="split">
-					<div class="col-sm-12 col-4 col-l1-5  leftcol">
-						<h1>What's your favorite genre?</h1>
-						<div class="split">
-							<div class="col-6">
-								<div class="item">
-								<h2>ADVENTURE</h2></div>
-							</div>
-							<div class="col-6">
-								<div class="item"><h2>ACTION
-									</h2></div>
-							</div>
-							<div class="col-6">
-								<div class="item">
-								<h2>DRAMA</h2></div>
-							</div>
-							<div class="col-6">
-								<div class="item">
-								<h2>COMEDY</h2></div>
-							</div>
-							<div class="col-6">
-								<div class="item">
-								<h2>THAI</h2></div>
-							</div>
-							<div class="col-6">
-								<div class="item">
-								<h2>HORROR</h2></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-12 col-8 col-l1-7 rightcol">
-						<div class="movielist">
-						<div class="conslider">
-                <div class="go next">
-					<img src="img/chevron-right.svg" class="donttouchme">
+    <section class="genre" id="genre">
+        <div class="genrelanding">
+            <div class="limit-block">
+                <div class="split">
+                    <div class="col-sm-12 col-4 col-l1-5  leftcol">
+                        <h1>What's your favorite genre?</h1>
+                        <div class="split">
+                            <div class="col-6">
+                                <div class="item" onclick="switchGenre(adventure)">
+                                    <h2>ADVENTURE</h2>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item" onclick="switchGenre(action)">
+                                    <h2>ACTION
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item" onclick="switchGenre(drama)">
+                                    <h2>DRAMA</h2>
+                                </div>
+                            </div>
+                            <div class="col-6" >
+                                <div class="item" onclick="switchGenre(comedy)">
+                                    <h2>COMEDY</h2>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item" onclick="switchGenre(thai)">
+                                    <h2>THAI</h2>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item" onclick="switchGenre(horror)">
+                                    <h2>HORROR</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-8 col-l1-7 rightcol">
+                        <div class="movielist">
+                            <div class="conslider">
+                                <div class="go next">
+                                    <img src="img/chevron-right.svg" class="donttouchme">
+                                </div>
+                                <div class="go prev">
+                                    <img src="img/chevron-left.svg" class="donttouchme">
+
+                                </div>
+                                <div class="moviecon" id="genrecon"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="go prev">
-					<img src="img/chevron-left.svg" class="donttouchme">
-                    
-                </div>
-                <div class="moviecon" id="genrecon"></div>
             </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</section>
+
+        </div>
+    </section>
     <script src="app.js"></script>
 </body>
+
 </html>
