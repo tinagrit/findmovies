@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findmovies</title>
+    <link rel="stylesheet" href="splitme.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <nav class="stick">
+        <div class="navparent">
+            <a onclick="to('top')">
+                <h1>FINDMOVIES</h1>
+            </a>
+            <div class="btns">
+                <a onclick="link('.')" class="item">HOME</a>
+            </div>
+        </div>
+    </nav>
+	
+	
+	
+	<div id="movie">
+		<h1 class="watermark">FINDMOVIES</h1>
+		<div class="limit-block">
+			<div class="split">
+				<div class="col-ns-4 ">
+					<div class="controller">
+						<img class="miniposter " src="img/posters/10.jpg" onload="doPadding()" alt="">
+					</div>
+					
+				</div>
+				<div class="col-ns-8">
+					<h1 class="movietitle">Spider-Man: No Way Home</h1>
+					<div class="menu split">
+						<div class="menublock">
+							<div class="menulink">
+								<p>PLAY</h1>
+							</div>
+						</div>
+						<div class="menublock">
+							<div class="menulink">
+								<p>TRAILER</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<section class="footer">
+		<div class="limit-block">
+			<div class="split">
+				<div class="col-ns-6">
+					<h1>FINDMOVIES</h1>
+					<p>A Service to let you find new movies</p>
+				</div>
+				<div class="col-ns-6" style="position: relative;">
+					<div class="socials">
+						<div class="block">
+							<img src="img/facebook.svg" alt="">
+						</div>
+						<div class="block">
+							<img src="img/instagram.svg" alt="">
+						</div>
+						<div class="block">
+							<img src="img/twitter.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<script src="required.js"></script>
+	<script src="movies.js"></script>
+
+	<script>
+		function doPadding() {
+			document.querySelector('#movie .limit-block').style.paddingTop = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
+			
+			document.querySelector('#movie .controller').style.top = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
+		}
+		
+	</script>
+</body>
+
+</html>

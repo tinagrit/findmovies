@@ -440,6 +440,7 @@ section.trending {
 	
 }
 
+/*
 @media (min-width: 650px) {
 	.movielist .conslider .go{
 		visibility: hidden;
@@ -449,6 +450,7 @@ section.trending {
 .movielist .conslider:hover .go {
 	visibility: visible;
 }
+*/
 
 .movielist .conslider .go img {
 	width: 100%;
