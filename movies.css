@@ -21,6 +21,12 @@ nav.stick {
 	left: 20px;
 }
 
+@media (max-width: 650px) {
+	#movie .watermark {
+		display: none;
+	}
+}
+
 section.footer {
 	z-index: 2;
 }
@@ -32,23 +38,52 @@ section.footer {
 	position: relative;
 }
 
+@media (max-width: 650px) {
+	#movie {
+		padding-bottom: 100px;
+	}
+}
+
 #movie .miniposter {
 	width: 100%;
 	border-radius: 20px;
 }
 
-#movie .limit-block {
-	padding-top: 20vh;
-	
+@media (max-width: 650px) {
+	#movie .miniposter {
+		width: 80%;
+		max-width: 330px;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
-#movie .limit-block>.split {
-	min-height: 80vh;
+#movie .limit-block {
+	padding-top: 20vh;
+}
+
+@media (max-width: 650px) {
+	#movie .limit-block {
+		padding-top: 80px;
+	}
+}
+
+
+@media (min-width: 650px) {
+	#movie .limit-block>.split {
+		min-height: 80vh;
+	}	
 }
 
 #movie .movietitle {
 	padding: 15px 0;
 	font-size: 40px;
+}
+
+@media (max-width: 650px) {
+	#movie .movietitle {
+		text-align: center;
+	}
 }
 
 #movie .menu {
@@ -79,10 +114,12 @@ section.footer {
 	transition: all 0.5s;
 }
 
-#movie .menulink:hover:not(.disabled) {
-	background-color: white;
-	cursor: pointer;
-	transform: scale(1.08);
+@media (min-width: 650px) {
+	#movie .menulink:hover:not(.disabled) {
+		background-color: white;
+		cursor: pointer;
+		transform: scale(1.08);
+	}
 }
 
 #movie .menulink.disabled {

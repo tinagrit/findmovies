@@ -126,10 +126,25 @@ let movies = [
 		"trailer": "EFYEni2gsK0",
 		"watch": "https://www.netflix.com/title/81462126"
 	},
-	{},
-	{},
-	{},
-	{ // 24
+	{ // 21
+		"title": "Les Misérables",
+		"desc": "Les Miserables (Wretched)<br><br>In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+		"trailer": "YmvHzCLP6ug",
+		"watch": "https://www.primevideo.com/detail/amzn1.dv.gti.18ac0f2d-f50a-3f4c-ab6f-ecff118f8f54"
+	},
+	{ // 22
+		"title": "君の名は。",
+		"desc": "Kimi No Na Ha. (Your Name)<br><br>Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
+		"trailer": "ZHzTER30sNo",
+		"watch": ""
+	},
+	{ // 23
+		"title": "天気の子",
+		"desc": "Tenki No Ko (Weathering with You)<br><br>A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
+		"trailer": "d6JDwsjPGXM",
+		"watch": ""
+	},
+	{ // 24 
 		"title": "The Suicide Squad",
 		"desc": "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
 		"trailer": "eg5ciqQzmK0",
@@ -141,7 +156,12 @@ let movies = [
 		"trailer": "FXMB7zjUSeg",
 		"watch": ""
 	},
-	{ },
+	{ // 26
+		"title": "グッドラック！！",
+		"desc": "Gud Do Rak Ku!! (Good Luck!!)<br><br>Hajime is a pilot on an international jetliner. He can't seem to please Captain Koda since an incident years ago. To complicate matters, he begins a relationship with a mechanic, Ayumi, whose parents died many years ago in the plane crash.",
+		"trailer": "",
+		"watch": "https://www.youtube.com/playlist?list=PLjz5VjbA5MiyIt_xxfwVrAoYW-e2TvQ6A"
+	},
 	{ // 27
 		"title": "365 DAYS",
 		"desc": "Massimo is a member of the Sicilian Mafia family and Laura is a sales director. She does not expect that on a trip to Sicily trying to save her relationship, Massimo will kidnap her and give her 365 days to fall in love with him.",
@@ -265,62 +285,62 @@ let movies = [
 	},
 	{ // 48
 		"title": "หอแต๋วแตกแหกโควิดปังปุริเย่",
-		"desc": 'เดินทางมาสู่ภาคที่ 8 แล้วสำหรับจักรวาล "หอแต๋วแตก" ซึ่งไม่รู้ว่าเริ่มยังไงและจะไปจบที่ตรงไหน รู้แค่ว่าเจ้แต๋วกลับมา พร้อมกับอีแพนเค้กที่ไม่ได้ไปผุดไปเกิด (สักที) อีกทั้งแขกรับเชิญและการบันทึกประวัติศาสตร์พงศาวดารจดหมายเหตุประเทศไทยปี 2564 ยุคโควิดระบาด',
+		"desc": "Hor Taew Tak Hak COVID Pang Puri Yay (Hor Taew Taek Breaking Through COVID YAY)<br><br>In the 8th episode of 'Hor Taew Tak', no one knows how it starts and how it ends, all we know is 'Jae Taew' came back and 'Pancake' who is still not dead. It also comes with a memorial record about COVID-19 in 2021 in Thailand.",
 		"trailer": "Dz-u6ckxDwM",
 		"watch": ""
 	},
 	{ // 49
 		"title": "เคว้ง",
-		"desc": "กลุ่มนักเรียนโรงเรียนไฮโซต้องพยายามประคับประคองความหวังไม่ให้มอดดับขณะติดอยู่บนซากเกาะที่เสียหายหลังสึนามิถล่ม แต่ดูเหมือนจะมีพลังงานลึกลับบางอย่างคอยขัดขวางอยู่",
+		"desc": "Kueng (The Stranded)<br><br>A group of students from a private school has to survive in a deserted island after a tsunami disaster, but seems like there is 'something' blocking them doing so.",
 		"trailer": "gXXPRKdcN50",
 		"watch": "https://www.netflix.com/title/80242491"
 	},
 	{ // 50
 		"title": "Friend Zone",
-		"desc": "Friend Zone ระวัง สิ้นสุดทางเพื่อน ชายผู้ติดอยู่ในเฟรนด์โซนของเพื่อนสนิทที่คบหามานานกว่า 10 ปี จนเป็นจุดเริ่มต้นของความสัมพันธ์ที่ไม่รู้ว่าจะลงเอยแบบแฟนหรือจะสิ้นสุดทางเพื่อนกันแน่!",
+		"desc": "Friend Zone, a guy who is stuck in a 'friend zone' to the one who likes for more than 10 years, until when no one knows how this relationship is going to end, will they be a couple, or will they break up!",
 		"trailer": "4S81gZQ68LE",
 		"watch": ""
 	},
 	{ // 51
-		"title": "Bad Genius ฉลาดเกมส์โกง",
-		"desc": "เมื่อนำความฉลาดมาใช้ผิดทาง อาจจะพาคุณไปพบกับคำตอบของชีวิตในรูปแบบที่ไม่เคยคาดคิด",
+		"title": "ฉลาดเกมส์โกง",
+		"desc": "Chalad Game Gong (Bad Genius)<br><br>Using a 'genius' in a bad way can lead to the life you never expect",
 		"trailer": "JcUf9ANCpNY",
 		"watch": "https://www.netflix.com/title/80245442"
 	},
 	{ // 52
 		"title": "๙ ศาสตรา",
-		"desc": "เรื่องราวการผจญภัยของ อ๊อด เด็กหนุ่มที่ชะตาลิขิตให้เป็นส่วนหนึ่งในการกอบกู้อาณาจักร รามเทพนคร แผ่นดินเกิดของเขาให้รอดพ้นอำนาจของ เทหะยักษา เจ้าแห่งยักษ์ผู้เข้ามายึดครองอาณาจักร และก่อความทุกข์เข็ญให้กับเหล่าประชาชน",
+		"desc": "Gao Satra (Nine Satra)<br><br>A story of 'Odd', a boy who has to save the whole entire kingdom of Bangkok from a giant 'Tae Ha Yuk Sa' ",
 		"trailer": "J0Wvh4KJOkg",
 		"watch": ""
 	},
 	{ // 53
 		"title": "Tootsies & The Fake",
-		"desc": "ความเฟคเริ่มต้นขึ้นเมื่อ กอล์ฟ ตุ๊ดร่างยักษ์ ดันเป็นต้นเหตุให้ เคที่ (ชมพู่ – อารยา เอ ฮาร์เก็ต) ซุป’ตาร์ตัวแม่ เกิดอุบัติเหตุจนอาการโคม่า นอนสลบเป็นเจ้าหญิงนิทราและไม่มีทีท่าว่าจะฟื้นขึ้นมาถ่ายโฆษณาที่เธอเป็นพรีเซ็นเตอร์อยู่ได้ ทำให้กอล์ฟจะต้องชดใช้ค่าเสียหายถึง 50 ล้านบาท!",
+		"desc": "The Fake starts when 'Golf', a big transvestite guy who made 'Katy', a celebrity, get into a big accident. She doesn't wake up but an advertisement campaign must remain working, he must find another presenter, or PAY A COST OF 50 MILLION BAHT",
 		"trailer": "dcr-gSaZOuM",
 		"watch": "https://www.netflix.com/title/81131413"
 	},
 	{ // 54
 		"title": "I Fine..Thank You..Love You",
-		"desc": "“เพลง” (ไอซ์-ปรีชญา พงษ์ธนานิกร) ติวเตอร์ภาษาอังกฤษสาว ต้องพบกับเรื่องราวอันสุดแสนจะน่าปวดหัว เมื่อลูกศิษย์ชาวต่างชาติของเธอตัดสินใจทิ้ง “ยิม” (ซันนี่ สุวรรณเมธานนท์) แฟนหนุ่มคนไทยไปอเมริกา แต่ด้วยความที่ยิมฟังภาษาอังกฤษไม่ออก เธอจึงอัดวีดิโอบอกเลิกใส่ธัมป์ไดรว์แล้วขอร้องให้เพลงช่วยไปเปิดแปลให้ยิมฟัง เมื่อยิมรู้ว่าถูกบอกเลิกก็โมโหมาก จึงตัดสินใจไปสมัครเรียนภาษาอังกฤษกับเพลง โดยหวังจะตามไปง้อแฟนที่อเมริกา",
+		"desc": "'Pleng', an English tutor, has to deal with a situation where one of her student broke up with her girlfriend and went to the United States, the problem is that she can't speak English",
 		"trailer": "ELFL42u8mv8",
 		"watch": ""
 	},
 	{ // 55
 		"title": "รักฉุดใจนายฉุกเฉิน",
-		"desc": "ความรักที่เกิดขึ้นในแผนกฉุกเฉิน ที่จะทำให้ทุกคน อิ่มเอมไปกับพลังแห่งความรักอันสุดแสนแฟนตาซี พร้อมกับเหตุการณ์ไม่คาดฝัน ที่นำมาซึ่ง ความเป็น ความตาย การรักษาอย่างดุเดือด",
+		"desc": "Ruk Chud Jai Nai Chuk Chern (My Ambulance)<br><br>The Love in an emergency department, having everyone shocked with the magic power between the couple, and it leads to unexpected situation, deaths, and so many treatments!",
 		"trailer": "JOCIPuwL5AE",
 		"watch": "https://www.youtube.com/watch?v=wWbAcdbMi-A&ab_channel=NadaoBangkok"
 	}
 		
 ]
 
-let featured = 		[0	,1	,2	,3	,4	,5	,6	,7	,8	,9	];
-let adventure = 	[10	,11	,12	,13	,14	,15	,8	,16	,17	,4	];
-let action = 		[18	,14	,8	,19	,15	,20	,24				];
-let drama = 		[25	,27	,28	,29	,30	,31	,32	,33			];
-let comedy = 		[19	,33	,18	,35	,36	,37	,38	,39	,40	,41	];
-let horror = 		[42	,43	,44	,45	,46	,47					];
-let thai = 			[48	,49	,50	,51	,52	,53	,54	,55			];
+let featured = 		[0	,1	,2	,3	,4	,5	,6	,7	,8	,9		];
+let adventure = 	[10	,11	,12	,13	,14	,15	,8	,16	,17	,4		];
+let action = 		[18	,14	,8	,19	,15	,20	,24					];
+let drama = 		[21	,22 ,23 ,25	,27	,28	,29	,30	,31	,32	,33	];
+let comedy = 		[19	,33	,18	,35	,36	,37	,38	,39	,40	,41		];
+let horror = 		[42	,43	,44	,45	,46	,47						];
+let thai = 			[48	,49	,50	,51	,52	,53	,54	,55				];
 
 
 function to(x) {

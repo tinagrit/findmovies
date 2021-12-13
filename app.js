@@ -65,7 +65,7 @@ function assign(e,m) {
 	e.onclick = () => {link('./movies.html?id=' + m)};
 	e.querySelector('h1').innerHTML = movies[m].title;
 	e.querySelector('img').src = 'img/posters/'+m+'.jpg';
-	e.querySelector('img').alt = movies[m].title;
+	e.querySelector('img').alt = movies[m].title + ' Poster';
 }
 
 
