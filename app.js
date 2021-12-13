@@ -1,15 +1,32 @@
-
-
 window.onscroll = function() {
     if (document.body.scrollTop > 45 || document.documentElement.scrollTop > 45) {
-        document.querySelector("nav.fix").style.top = "0";
+        document.querySelector("nav.stick").classList.add('scrolled');
       } else {
-        document.querySelector("nav.fix").style.top = "-80px";
+        document.querySelector("nav.stick").classList.remove('scrolled');
       }
 };
+
 var a;
-function conme(e) {
-	a=e;
+
+function createcon(parent,array) {
+	for (i=0; i<array.length; i++) {
+		it = document.createElement('a');
+		it.classList.add('item');
+
+		itimg = document.createElement('img');
+		ith1 = document.createElement('h1');
+
+		it.appendChild(itimg);
+		it.appendChild(ith1);
+
+		assign(it,array[i])
+		
+
+		parent.appendChild(it);
+	}
+}
+
+function conme(e,a) {
 	
 	let prev = e.parentNode.querySelector('.prev')
 	let next = e.parentNode.querySelector('.next')
@@ -38,32 +55,20 @@ function conme(e) {
 			e.scrollLeft += 170;
 
 	})
+
+	createcon(e,a);
 }
 
 
 
 function assign(e,m) {
+	e.onclick = () => {link('./movies.html?id=' + m)};
 	e.querySelector('h1').innerHTML = movies[m].title;
 	e.querySelector('img').src = 'img/posters/'+m+'.jpg';
 	e.querySelector('img').alt = movies[m].title;
 }
 
-function createcon(parent,array) {
-	for (i=0; i<array.length; i++) {
-		it = document.createElement('div');
-		it.classList.add('item');
 
-		itimg = document.createElement('img');
-		ith1 = document.createElement('h1');
-
-		it.appendChild(itimg);
-		it.appendChild(ith1);
-
-		assign(it,array[i])
-
-		parent.appendChild(it);
-	}
-}
 
 function getRandomMovies(x) {
 	let randommov = [];
@@ -77,13 +82,6 @@ function getRandomMovies(x) {
 	return randommov;
 }
 
-conme(document.getElementById('trendingcon'))
-conme(document.getElementById('genrecon'))
-conme(document.getElementById('randomcon'))
-
-createcon(document.getElementById('trendingcon'),featured);
-createcon(document.getElementById('genrecon'),adventure)
-createcon(document.getElementById('randomcon'),getRandomMovies(10))
 
 function spinrandomcon() {
 	document.getElementById('randomcon').innerHTML = '';

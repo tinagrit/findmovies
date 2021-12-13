@@ -14,11 +14,13 @@
 <body>
     <nav class="stick">
         <div class="navparent">
-            <a onclick="to('top')">
+            <a onclick="link('.')">
                 <h1>FINDMOVIES</h1>
             </a>
             <div class="btns">
-                <a onclick="link('.')" class="item">HOME</a>
+                <a onclick="link('./#trending')" class="item">TRENDING</a>
+                <a onclick="link('./#genre')" class="item">GENRE</a>
+                <a onclick="link('./#random')" class="item">RANDOM</a>
             </div>
         </div>
     </nav>
@@ -26,33 +28,41 @@
 	
 	
 	<div id="movie">
-		<h1 class="watermark">FINDMOVIES</h1>
-		<div class="limit-block">
+		<div class="overlay">
+			<img src="img/close.svg" class="ex" onclick="trailer()">
+			<iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="limit-block limit-block-xs">
 			<div class="split">
-				<div class="col-ns-4 ">
+				<div class="col-ns-4 relate">
 					<div class="controller">
-						<img class="miniposter " src="img/posters/10.jpg" onload="doPadding()" alt="">
+						<img class="miniposter " src="" alt="">
 					</div>
 					
 				</div>
 				<div class="col-ns-8">
-					<h1 class="movietitle">Spider-Man: No Way Home</h1>
+					<h1 class="movietitle">Error</h1>
 					<div class="menu split">
 						<div class="menublock">
-							<div class="menulink">
+							<div class="menulink play disabled">
 								<p>PLAY</h1>
 							</div>
 						</div>
-						<div class="menublock">
-							<div class="menulink">
+						<div class="menublock ">
+							<div class="menulink trailer disabled">
 								<p>TRAILER</h1>
 							</div>
 						</div>
 					</div>
+					<hr>
+					<p class="moviedesc">
+						Can't find the movie you are looking for
+					</p>
 				</div>
 			</div>
 		</div>
-		
+
+		<h1 class="watermark">FINDMOVIES</h1>
 	</div>
 	
 	<section class="footer">
@@ -80,14 +90,15 @@
 		</div>
 	</section>
 	<script src="required.js"></script>
+	<script src="app.js"></script>
 	<script src="movies.js"></script>
 
 	<script>
-		function doPadding() {
-			document.querySelector('#movie .limit-block').style.paddingTop = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
+		// function doPadding() {
+		// 	document.querySelector('#movie .limit-block').style.paddingTop = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
 			
-			document.querySelector('#movie .controller').style.top = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
-		}
+		// 	document.querySelector('#movie .controller').style.top = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
+		// }
 		
 	</script>
 </body>

@@ -11,18 +11,6 @@
 </head>
 
 <body>
-    <nav class="fix">
-        <div class="navparent">
-            <a onclick="to('top')">
-                <h1>FINDMOVIES</h1>
-            </a>
-            <div class="btns">
-                <a onclick="to('trending')" class="item">TRENDING</a>
-                <a onclick="to('genre')" class="item">GENRE</a>
-                <a onclick="to('random')" class="item">RANDOM</a>
-            </div>
-        </div>
-    </nav>
     <nav class="stick">
         <div class="navparent">
             <a onclick="to('top')">
@@ -42,13 +30,13 @@
             <img class="background" src="img/featured/poster3.webp">
             <div class="abbottom">
                 <div class="center">
-                    <img class="title" src="img/featured/title.png">
+                    <img class="title" src="img/featured/title.png" onclick="link('./movies.html?id=0')">
                     <div class="watch">
                         <button
                             onclick="link(`https://www.disneyplus.com/movies/diary-of-a-wimpy-kid/3W4BZbeErSgN`)"><img
                                 src="img/disneyplus.svg"></button>
                     </div>
-                    <h2 class="moreinfo"><img src="img/info.svg"> <span>More Info</span></h2>
+                    <a onclick="link('./movies.html?id=0')"><h2 class="moreinfo"><img src="img/info.svg"> <span>More Info</span></h2></a>
                 </div>
             </div>
 
@@ -155,13 +143,13 @@
 				</div>
 				<div class="col-ns-6" style="position: relative;">
 					<div class="socials">
-						<div class="block">
+						<div class="block" onclick="link('https://facebook.com')">
 							<img src="img/facebook.svg" alt="">
 						</div>
-						<div class="block">
+						<div class="block" onclick="link('https://instagram.com')">
 							<img src="img/instagram.svg" alt="">
 						</div>
-						<div class="block">
+						<div class="block" onclick="link('https://twitter.com')">
 							<img src="img/twitter.svg" alt="">
 						</div>
 					</div>
@@ -172,6 +160,12 @@
 	</section>
 	<script src="required.js"></script>
     <script src="app.js"></script>
+    <script>
+        conme(document.getElementById('trendingcon'),featured)
+        conme(document.getElementById('genrecon'),adventure)
+        conme(document.getElementById('randomcon'),getRandomMovies(10))
+
+    </script>
 </body>
 
 </html>
