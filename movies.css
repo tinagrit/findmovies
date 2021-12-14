@@ -52,7 +52,7 @@ section.footer {
 @media (max-width: 650px) {
 	#movie .miniposter {
 		width: 80%;
-		max-width: 330px;
+		max-width: 180px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -63,8 +63,9 @@ section.footer {
 }
 
 @media (max-width: 650px) {
-	#movie .limit-block {
+	#movie .limit-block:not(.excluded) {
 		padding-top: 80px;
+		padding-bottom: 100px;
 	}
 }
 

@@ -16,6 +16,12 @@ body {
 	position: relative;
 }
 
+@media (max-width: 650px) {
+    #inquiry {
+        padding-bottom: 100px;
+    }
+}
+
 #inquiry .watermark {
 	opacity: 0.3;
 	position: sticky;
