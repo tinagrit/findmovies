@@ -587,6 +587,12 @@ section.footer p {
 	font-size: 20px;
 	
 }
+
+section.footer a {
+    margin-top: 5px;
+    font-size: 15px;
+    color: currentColor;
+}
 section.footer .split .col-ns-6 {
 	padding-bottom: 0;
 }
@@ -632,11 +638,21 @@ section.footer .socials .block img {
 	section.footer p {
 		text-align: center
 	}
-	section.footer p {
+	section.footer a {
 		margin-bottom: 30px;
+        text-align: center;
+        display: block;
 	}
 	section.footer .socials {
 		right: 50%;
 		transform: translate(50%,-50%);
 	}
+}
+
+
+
+section.actor {
+    background-color: black;
+    color: white;
+    padding: 30px 0 50px 0;
 }

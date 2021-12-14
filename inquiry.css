@@ -1,0 +1,77 @@
+body {
+	width: 100vw;
+    background-image: url('img/theater.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	background-attachment: fixed;
+
+    overflow-x: hidden;
+}
+
+#inquiry {
+    min-height: 100vh;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	position: relative;
+}
+
+#inquiry .watermark {
+	opacity: 0.3;
+	position: sticky;
+	width: fit-content;
+	padding-bottom: 20px;
+	bottom: 0;
+	left: 20px;
+}
+
+@media (max-width: 650px) {
+	#inquiry .watermark {
+		display: none;
+	}
+}
+
+#inquiry .limit-block:not(.excluded) {
+    padding-top: 20vh;
+    min-height: 100vh;
+}
+
+@media (max-width: 650px) {
+	#inquiry .limit-block {
+		padding-top: 150px;
+	}
+}
+
+#inquiry h1 {
+    text-align: center;
+}
+
+#inquiry select  {
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 25px;
+    margin: 15px 0;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    outline: none;
+}
+
+#inquiry .info {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+    visibility: hidden;
+}
+
+#inquiry .info p {
+    font-size: 20px;
+}
+
+#inquiry .info h2 {
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    font-size: 35px;
+    margin: 10px 0;
+}

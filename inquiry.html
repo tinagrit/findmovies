@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries - findmovies</title>
+    <link rel="stylesheet" href="splitme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inquiry.css">
+</head>
+
+<body>
+    <nav class="stick">
+        <div class="navparent">
+            <a onclick="link('.')">
+                <h1>FINDMOVIES</h1>
+            </a>
+            <div class="btns">
+                <a onclick="link('./#trending')" class="item">TRENDING</a>
+                <a onclick="link('./#genre')" class="item">GENRE</a>
+                <a onclick="link('./#random')" class="item">RANDOM</a>
+            </div>
+        </div>
+    </nav>
+	
+	
+	
+	<div id="inquiry">
+		<div class="limit-block limit-block-xs">
+            <h1>CONTACT FINDMOVIES</h1>
+            <select id="topicSelect">
+                <option value="none" disabled selected>Choose topic</option>
+                <option value="compliment">I'd like to give a compliment</option>
+                <option value="complaint">I'd like to file a complaint</option>
+                <option value="service">I'd like to suggest a service</option>
+                <option value="inquiry">I'd like to ask a question about the service</option>
+                <option value="movie">I'd like to ask a question about the movies & TVs listed</option>
+                <option value="claim">I'd like to file a copyright claim</option>
+                <option value="suggest">I'd like to suggest more movies & TVs</option>
+                <option value="other">Not Listed</option>
+            </select>
+            <div class="info">
+                <p>Please contact us at</p>
+                <h2 id="email">email@gmail.com</h2>
+                <p>and we'll get back to you as soon as possible</p>
+            </div>
+        </div>
+        <div class="limit-block movielist excluded">
+			<h1 style="text-align: center;">You May Like</h1>
+			<div class="conslider">
+                <div class="go next">
+                    <img src="img/chevron-right.svg" class="donttouchme">
+                </div>
+                <div class="go prev">
+                    <img src="img/chevron-left.svg" class="donttouchme">
+
+                </div>
+                <div class="moviecon" id="randomcon"></div>
+            </div>
+		</div>
+
+		<h1 class="watermark">FINDMOVIES</h1>
+	</div>
+	
+	<section class="footer">
+		<div class="limit-block">
+			<div class="split">
+				<div class="col-ns-6">
+					<h1>FINDMOVIES</h1>
+					<p>A Service that lets you find new movies</p>
+                    <a href="inquiry.html">CONTACT US</a>
+				</div>
+				<div class="col-ns-6" style="position: relative;">
+					<div class="socials">
+						<div class="block" onclick="link('https://facebook.com')">
+							<img src="img/facebook.svg" alt="">
+						</div>
+						<div class="block" onclick="link('https://instagram.com')">
+							<img src="img/instagram.svg" alt="">
+						</div>
+						<div class="block" onclick="link('https://twitter.com')">
+							<img src="img/twitter.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<script src="required.js"></script>
+	<script src="app.js"></script>
+    <script src="inquiry.js"></script>
+    <script>
+        conme(document.getElementById('randomcon'),getRandomMovies(10))
+	</script>
+
+</body>
+
+</html>

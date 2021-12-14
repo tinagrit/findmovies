@@ -58,7 +58,7 @@ section.footer {
 	}
 }
 
-#movie .limit-block {
+#movie .limit-block:not(.excluded) {
 	padding-top: 20vh;
 }
 

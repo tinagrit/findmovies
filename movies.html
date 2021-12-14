@@ -61,6 +61,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="limit-block movielist excluded">
+			<h1 style="text-align: center;">You May Like</h1>
+			<div class="conslider">
+                <div class="go next">
+                    <img src="img/chevron-right.svg" class="donttouchme">
+                </div>
+                <div class="go prev">
+                    <img src="img/chevron-left.svg" class="donttouchme">
+
+                </div>
+                <div class="moviecon" id="randomcon"></div>
+            </div>
+		</div>
 
 		<h1 class="watermark">FINDMOVIES</h1>
 	</div>
@@ -70,7 +83,8 @@
 			<div class="split">
 				<div class="col-ns-6">
 					<h1>FINDMOVIES</h1>
-					<p>A Service to let you find new movies</p>
+					<p>A Service that lets you find new movies</p>
+                    <a href="inquiry.html">CONTACT US</a>
 				</div>
 				<div class="col-ns-6" style="position: relative;">
 					<div class="socials">
@@ -94,12 +108,7 @@
 	<script src="movies.js"></script>
 
 	<script>
-		// function doPadding() {
-		// 	document.querySelector('#movie .limit-block').style.paddingTop = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
-			
-		// 	document.querySelector('#movie .controller').style.top = 'calc(50vh - ' + document.querySelector('#movie .controller').offsetHeight / 2 + 'px)';
-		// }
-		
+        conme(document.getElementById('randomcon'),getRandomMovies(10))
 	</script>
 </body>
 
