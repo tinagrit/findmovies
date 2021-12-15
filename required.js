@@ -1,5 +1,17 @@
 // JavaScript Document
 let movies = [
+	/*
+	
+			{ // No.
+				"title": "Movie Title",
+				"desc": "Movie Overview",
+				"trailer": "YouTube Video ID",
+				"watch": "URL to watch movie in streaming services"
+			}
+
+			"trailer" and "watch" can be left blank if the movie doesn't have one
+		
+	*/
 	{ // 0
 		"title": "Diary of a Wimpy Kid",
 		"desc": "Greg Heffley is an ambitious kid with an active imagination and big plans to be rich and famous. The problem is that he has to survive middle school first.",
@@ -19,8 +31,8 @@ let movies = [
 		"watch": "https://www.netflix.com/title/81040344"
 	},
 	{ // 3
-		"title": "Demon Slayer: Kimetsu No Yaiba",
-		"desc": "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
+		"title": "鬼滅の刃",
+		"desc": "Kimetsu No Yaiba (Demon Slayer)<br><br>A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
 		"trailer": "t6MXHczeEqc",
 		"watch": "https://www.netflix.com/title/81091393"
 	},
@@ -64,7 +76,7 @@ let movies = [
 		"title": "Spider-Man: No Way Home",
 		"desc": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
 		"trailer": "JfVOs4VSpmA",
-		"watch": "https://spidermannowayhome.com"
+		"watch": ""
 	},
 	{ // 11
 		"title": "Ghostbusters: Afterlife",
